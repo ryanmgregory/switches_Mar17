@@ -9,7 +9,7 @@ function init() {
 function createSwitch() {
   console.log("in createSwitch");
   $(".js-container").append(`
-    <div>
+    <div class="on">
         <p>This is a switch</p>
         <button>Turn Switch Off Button</button>
     <div>
