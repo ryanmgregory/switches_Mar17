@@ -7,7 +7,7 @@ let switchesOn = 0;
 // add event listener call to Turn Off Btn to turn off switch- target container with filter class (btn) (on when page loads)
 function init() {
   $(".js-btn-create-switch").on("click", createColorSwitch);
-  $(".js-container").on("click, .turnOff", turnSwitchOff);
+  //   $(".js-container").on("click, .turnOff", turnSwitchOff);
 }
 
 // target div with function: create <p>, create <btn> (inside div)
@@ -17,7 +17,7 @@ function createColorSwitch() {
   $(".js-container").append(`
     <div class="onStyle">   
     <p>Switch</p>
-    <button class="turnOff>Turn Off</button>
+    <button class="turnOff">Turn Off</button>
     <div>
     `);
   // create switches on counter & (add global variable) & call
@@ -30,7 +30,5 @@ function updateSwitchCounter() {
   $(".js-switches-h1-count").text(`Switches turned on: ${switchesOn}`);
 }
 
-// create function to turn off switch when Turn Off btn is clicked (event lister added)
-function turnSwitchOff() {
-  $(".turnOff");
-}
+// // create function to turn off switch when Turn Off btn is clicked (event lister added)
+// function turnSwitchOff() {}
