@@ -1,14 +1,24 @@
 $(document).ready(init);
 
+let switchCount = 0;
+
 function init() {
   $(".js-btn-create-switch").on("click", createSwitch);
 }
 
 function createSwitch() {
+  console.log("in createSwitch");
   $(".js-container").append(`
     <div>
-        <p>This is a switch<p>
-        <button>Turn Switch Off</button>
+        <p>This is a switch</p>
+        <button>Turn Switch Off Button</button>
     <div>
     `);
+  switchCount++;
+  updateSwitchCount();
+}
+
+function updateSwitchCount() {
+  console.log("in updateSwitchCount");
+  $(".js-switch-count").text(`Switches Turned On: ${switchCount}`);
 }
