@@ -1,5 +1,9 @@
-.onStyle {
+.on {
   background-color: green;
   margin: 8px;
   padding: 8px;
+}
+
+.off {
+  background-color: red;
 }
