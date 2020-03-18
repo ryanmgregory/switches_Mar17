@@ -4,9 +4,10 @@ $(document).ready(init);
 let switchesOn = 0;
 
 // on init: target btn on html.  on click: target container div with function.
-// add event listener call to Turn Off Btn to turn off switch
+// add event listener call to Turn Off Btn to turn off switch- target container with filter class (btn) (on when page loads)
 function init() {
-  $(".js-btn-create-switch").on("click", createColorSwitch, turnSwitchOff);
+  $(".js-btn-create-switch").on("click", createColorSwitch);
+  $(".js-container").on("click, .turnOff", turnSwitchOff);
 }
 
 // target div with function: create <p>, create <btn> (inside div)
