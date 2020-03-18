@@ -21,6 +21,9 @@ function turnSwitchOff() {
   $(this)
     .parent()
     .addClass("off");
+
+  switchCount--;
+  updateSwitchCount();
 }
 
 function updateSwitchCount() {
