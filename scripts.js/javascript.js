@@ -10,11 +10,12 @@ function init() {
 
 // target div with function: create <p>, create <btn> (inside div)
 // change div to having a class to style (green background)
+// make turn off btn turn off switch by adding a class to it and target the class.
 function createColorSwitch() {
   $(".js-container").append(`
     <div class="onStyle">   
     <p>Switch</p>
-    <button>Turn Off</button>
+    <button class="turnSwitchOff>Turn Off</button>
     <div>
     `);
   // create switches on counter & (add global variable) & call
