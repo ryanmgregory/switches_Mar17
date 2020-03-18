@@ -17,8 +17,12 @@ function createColorSwitch() {
     <button>Turn Off</button>
     <div>
     `);
-  // create switches on counter & (add global variable)
+  // create switches on counter & (add global variable) & call
   switchesOn++;
+  updateSwitchCounter();
 }
 
-// create counter to target <h1> when create switch is clicked
+// create counter to target <h1> class when create switch is clicked
+function updateSwitchCounter() {
+  $(".js-switches-h1-count").text(`Switches turned on: ${switchesOn}`);
+}
