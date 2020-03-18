@@ -7,9 +7,10 @@ function init() {
 }
 
 // target div with function: create <p>, create <btn> (inside div)
+// change div to having a class to style (red background)
 function createColorSwitch() {
   $(".js-container").append(`
-    <div>
+    <div class="onStyle">   
     <p>Switch</p>
     <button>Turn Off</button>
     <div>
