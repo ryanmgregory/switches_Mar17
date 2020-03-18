@@ -33,8 +33,12 @@ function updateSwitchCounter() {
 // // create function to turn off switch when Turn Off btn is clicked
 // (event lister added in init)
 // append <TurnOff Btn> parent class by adding class off off (& style)
+//update count when clicked off (and update counter)
 function turnSwitchOff() {
   $(this)
     .parent()
     .addClass("off");
+
+  switchesOn--;
+  updateSwitchCounter();
 }
