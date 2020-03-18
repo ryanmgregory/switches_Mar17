@@ -1,9 +1,8 @@
 $(document).ready(init);
-
 let switchCount = 0;
-
 function init() {
   $(".js-btn-create-switch").on("click", createSwitch);
+  $(".js-container").on("click", ".js-btn-turnOff", turnSwitchOff);
 }
 
 function createSwitch() {
@@ -11,11 +10,17 @@ function createSwitch() {
   $(".js-container").append(`
     <div class="on">
         <p>This is a switch</p>
-        <button>Turn Switch Off Button</button>
+        <button class="js-btn-turnOff">Turn Switch Off Button</button>
     <div>
     `);
   switchCount++;
   updateSwitchCount();
+}
+
+function turnSwitchOff() {
+  $(this)
+    .parent()
+    .addClass("off");
 }
 
 function updateSwitchCount() {
