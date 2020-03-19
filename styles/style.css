@@ -1,6 +1,7 @@
 .on {
   background-color: green;
-  margin: 3px;
-  padding: 3px;
-  border-radius: 3px;
+}
+
+.off {
+  background-color: red;
 }
